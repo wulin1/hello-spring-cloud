@@ -13,10 +13,10 @@ public class AdminService {
     private RestTemplate restTemplate;
   @HystrixCommand(fallbackMethod = "hiError")
     public  String  sayHi(String message){
-        return restTemplate.getForObject("http://hello-spring-cloud-service-damin/hi?message" +message,String.class);
+        return restTemplate.getForObject("http://hello-spring-cloud-service-damin/hi?message" + message,String.class);
     }
     public String hiError(String message){
 
-        return String.format("Hi your message is : %s but request bad",message);
+        return String.format("Hi your message is : %s but request bad"+ message,String.class);
     }
 }
