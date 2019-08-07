@@ -12,8 +12,7 @@ zuul:
   routes:
     api-a:
       path: /api/a/**
-      serviceld:  hello-spring-cloud-web-admin-ribbon
+      serviceId:  hello-spring-cloud-web-admin-ribbon
     api-b:
       path: /api/b/**
-      serviceld:  hello-spring-cloud-web-admin-feign
-
+      serviceId:  hello-spring-cloud-web-admin-feign

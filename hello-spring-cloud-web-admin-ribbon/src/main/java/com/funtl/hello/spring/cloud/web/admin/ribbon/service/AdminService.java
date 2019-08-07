@@ -17,6 +17,6 @@ public class AdminService {
     }
     public String hiError(String message){
 
-        return String.format("Hi your message is : %s but request bad"+ message,String.class);
+        return String.format("Hi your message is : %s but request bad\",message");
     }
 }
