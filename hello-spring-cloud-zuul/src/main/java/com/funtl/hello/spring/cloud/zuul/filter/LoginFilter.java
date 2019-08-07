@@ -6,6 +6,7 @@ import com.netflix.zuul.exception.ZuulException;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Component
@@ -34,6 +35,8 @@ public class LoginFilter extends ZuulFilter {
             curreatContext.setSendZuulResponse(false);
             curreatContext.setResponseStatusCode(401);
             try {
+                HttpServletResponse response =curreatContext.getResponse();
+                response.setContentType("text/html;charset=utf-8");
                 curreatContext.getResponse().getWriter().write("非法请求");
             } catch (IOException e) {
                 e.printStackTrace();
