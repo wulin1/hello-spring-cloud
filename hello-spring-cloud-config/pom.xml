@@ -13,7 +13,7 @@
     <artifactId>hello-spring-cloud-config</artifactId>
     <packaging>jar</packaging>
 
-    <name>itoken-config</name>
+    <name>hello-spring-cloud-config</name>
     <url>http://www.funtl.com</url>
     <inceptionYear>2018-Now</inceptionYear>
 
@@ -86,7 +86,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.funtl.itoken.config.ConfigApplication</mainClass>
+                    <mainClass>com.funtl.hello.spring.cloud.config.ConfigApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
