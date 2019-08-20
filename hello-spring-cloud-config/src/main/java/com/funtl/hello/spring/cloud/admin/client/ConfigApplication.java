@@ -1,4 +1,4 @@
-package com.funtl.hello.spring.cloud.config;
+package com.funtl.hello.spring.cloud.admin.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

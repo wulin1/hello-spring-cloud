@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hello-spring-cloud-admin" />
+        <module name="hello-spring-cloud-admin-client" />
         <module name="hello-spring-cloud-config" />
         <module name="hello-spring-cloud-eureka" />
         <module name="hello-spring-cloud-service-admin" />
@@ -18,6 +19,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hello-spring-cloud-admin" target="1.8" />
+      <module name="hello-spring-cloud-admin-client" target="1.8" />
       <module name="hello-spring-cloud-config" target="1.8" />
       <module name="hello-spring-cloud-dependencles" target="1.8" />
       <module name="hello-spring-cloud-eureka" target="1.8" />
@@ -31,6 +33,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hello-spring-cloud-admin" options="-parameters" />
+      <module name="hello-spring-cloud-admin-client" options="-parameters" />
       <module name="hello-spring-cloud-config" options="-parameters" />
       <module name="hello-spring-cloud-eureka" options="-parameters" />
       <module name="hello-spring-cloud-service-admin" options="-parameters" />
